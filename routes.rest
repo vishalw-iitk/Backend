@@ -1,0 +1,33 @@
+GET http://localhost:3000/subscribers
+
+###
+
+GET http://localhost:3000/subscribers/2
+
+###
+
+POST http://localhost:3000/subscribers
+Content-Type: application/json
+
+{
+"name" : "Amazing Person",
+"subscribedToChannel" : "Vishal Waghmare channel"
+}
+
+###
+
+PATCH http://localhost:3000/subscribers/6033e1777f04423dbce22dd3
+Content-Type: application/json
+
+{
+    "name" : "Amazing Pearson"
+}
+
+###
+
+GET http://localhost:3000/subscribers/6033e1777f04423dbce22dd3
+
+###
+
+DELETE http://localhost:3000/subscribers/6033e1777f04423dbce22dd3
+
